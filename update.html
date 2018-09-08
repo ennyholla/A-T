@@ -1,0 +1,92 @@
+<DOCTYPE html>
+<html>
+<head>
+   <title>TODO do supply a title</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="mystyle.css" rel="stylesheet"/>
+<script>
+    function onRegisterPressed(){
+
+      var firstName = document.getElementById("firstname").value;
+      var lastName = document.getElementById("lastname").value;
+      var rollNum = document.getElementById("rollnum").value;
+      var subject = document.getElementById("subject").value;
+
+      var table = document.getElementById("regtable");
+      var row = table.insertRow();
+      var firstNameCell = row.insertCell(0);
+      var lastNameCell = row.insertCell(1);
+      //firstNameCells.colSpan = 2;
+      var rollNumCell  = row.insertCell(2);
+      var subjectCell  = row.insertCell(3);
+
+      firstNameCell.innerHTML = firstName;
+      lastNameCell.innerHTML = lastName;
+      rollNumCell.innerHTML = rollNum;
+      subjectCell.innerHTML = subject;
+
+      //clear fields
+
+      document.getElementById("firstname").value = "";
+      document.getElementById("lastname").value = "";
+      document.getElementById("rollnum").value = "";
+      document.getElementById("subject").value = ""; 
+
+
+ } 
+</script>   
+</head>
+<body>
+	<div class="container">
+		<header class="headerbar top"><h1>Registration</h1></header>
+		<aside class="leftbar">
+			<div>
+			<fieldset>
+				<label for="firstname" class="labelwidth">First Name</label>
+				<input type="text" placeholder="enter first name" id="firstname">
+			</fieldset>
+			<fieldset>
+				<label for="lastname" class="labelwidth">Last Name</label>
+				<input type="text" placeholder="enter last name" id="lastname">
+			</fieldset>
+			<fieldset>
+				<label for="rollnum" class="labelwidth">Roll Number</label>
+				<input type="number" placeholder="enter Roll number" id="rollnum">
+			</fieldset>
+			<fieldset>
+			<label for="subject">Subject</label>
+			<select id="subject">
+				<option value="Maths">Math</option>
+				<option value="Physics">Physics</option>
+				<option value="Chemistry">Chemistry</option>
+				<option value="English">English</option>
+				<option value="Tamil">Tamil</option>
+			</select>	
+			</fieldset>
+			<fieldset>
+				<label for="submit">&nbsp;</label>
+				<button id="submit" onclick="onRegisterPressed()">Register</button>
+			</fieldset>	
+      </div> 
+      </aside>
+     <aside class="rightbar">
+
+     <table id="regtable">
+         <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Roll Number</th>
+              <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>      
+      </table>
+    </aside>
+     <footer class="headerbar bottom"></footer>		
+	</div>
+</body>
+</html> 

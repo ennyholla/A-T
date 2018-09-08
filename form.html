@@ -1,0 +1,57 @@
+<head>
+	<style>
+
+	    
+
+		label,input{
+			display: block;
+		}
+
+		input{
+	    
+	    	width: 20%;
+	    	padding: 5px;
+	    	margin-bottom: 10px;
+	    }
+
+	    fieldset{
+	    	margin-bottom: 30px;
+	    	background-color: #ddd;
+	    }
+
+	    input[type=submit]{
+	    	background-color: yellow;
+	    	margin-top: 10px;
+	    }
+
+	</style>
+
+</head>
+<form>
+
+   <fieldset>
+    <legend>Personal Information</legend>
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name">
+
+	<label for="phone">Phone Number</label>
+	<input type="tel" id="phone" name="phone">
+
+	<label for="email">Email Id</label>
+	<input type="text" id="email" name="email">
+
+</fieldset>
+
+<fieldset>
+	<legend>Shipping Details</legend>
+	<label for="street">street</label>
+	<input type="text" id="street" name="street">
+
+
+	<label for="street">street #</label>
+	<input type="number" pattern="[0-9]*s" id="streetnumber" name="streetnumber">
+
+</fieldset>
+
+	<input type="submit" value="order">
+</form>

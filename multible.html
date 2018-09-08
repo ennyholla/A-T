@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>multible</title>
+	 <mata charset="windows-1252">
+	  <meta name="viewport" content="width=device-width", initial-scale=0.1>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+
+   *
+      {
+      margin: 1;
+      padding: 0;
+      }
+
+   #menu ul
+      {
+      	
+        list-style: none;
+
+      }
+
+   #menu ul li
+      {
+      	background-color: steelblue;
+      	border: 1px solid white;
+      	width: 120px;
+      	height: 35px;
+      	line-height: 35px;
+      	text-align: center;
+      	float: left;
+      	position: relative;
+      	border-radius: 8px;
+        
+      }
+
+   #menu ul li a 
+      {
+      	text-decoration: none;
+      	color: white;
+      	display: block;
+      }
+
+   #menu ul li a:hover
+      {
+      	background-color: gray;
+      	border-radius: 8px;
+      }
+
+   #menu ul ul
+      {
+      	position: absolute;
+      	display: none;
+      }
+
+   #menu ul li:hover > ul
+      {
+      	display: block ;
+      }
+
+  .stocks
+      {
+      	margin: 10px;
+      	text-align: center;
+      	color: white;
+      	font-size: 20px;
+      	background-color: steelblue;
+      	border: 1px solid white;
+      	border-radius: 1000px;
+        
+      }
+      
+   body
+      {
+      	background: #eee;
+      }
+
+   input
+      {
+        font-size: 15px;
+      }
+
+   img
+      {
+      	border: 1px solid white;
+      	border-radius: 120px;
+      	filter: grayscale(100%);
+      	transition: 1s;
+      }
+
+    img:hover{
+      	filter: grayscale(0);
+      	transform: scale(1.1);
+      }
+
+    .stocks2
+        {
+        	color: white;
+        }
+
+   .stocks3
+      {
+       
+       background: black;
+       color: white;
+       margin-left: 5px;
+      }
+
+   .stocks3 li{
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+
+   button
+      {
+      	background: steelblue;
+      	font-size: 15px;
+      }
+     
+  .stocks4
+      {
+      	background: red;
+      }
+     
+  input
+        {
+        	color: steelblue;
+        }
+
+  span{
+        	margin: 10px;
+        }
+
+        i{
+          margin-bottom: 10px;
+        }
+
+  input,label{
+        	display: block;
+        
+        }
+
+  input{
+        	font-size: 20px;
+        }
+
+       .stocks6{
+       	    margin: 10px;
+       }   
+
+  body{
+  	 font-family: sans-serif;
+       }
+
+  h1{
+  	text-align: center;
+  	color: black;
+  	margin: 30px 0 50px;
+  }
+
+  .gallery{
+     background-color: steelblue;
+  	 margin: 10px 50px;
+  }
+
+  .gallery img{
+  	border: 2px solid steelblue;
+  	width: 230px;
+  	padding: 0px;
+  	filter: grayscale(100%);
+  	transition: 1s;
+  }
+
+  .gallery img:hover{
+  	filter: grayscale(0);
+  	transform: scale(1.1);
+ }
+
+  li{
+    list-style: none;
+  }
+
+ .pagination a {
+ 	color: black;
+ 	float: left;
+ 	padding: 8px 16px;
+ 	text-decoration: none;
+ 	transition: background-color: .3s;
+ }
+
+  .pagination a:hover:not(.active){
+  	background-color: #ddd;
+  }
+
+  footer ul li a{
+    padding: 70px;
+  }
+ </style>
+</head>
+<body>	
+ <div id="menu">
+  <ul>
+   <li><a href="#"><span class="fa fa-home"></span>Home</a></li>
+    <li><a href="#"><span class="fa fa-users"></span>Our Team</a></li>
+     <li><a href="#"<span claa="fa fa-dollars"></span>FANGs blw $20</a>
+      <ul>
+       <li><a href="#"><span class="fa fa-apple"></span> $5</a></li>           
+        <li><a href="#"><span class="fa fa-amazon"></span> $10</a></li>
+          <li><a href="#"><span class="fa fa-google"></span> $15</a></li>                       <li><a      href="#"><span class="fa fa-facebook"></span> $16</a></li>         
+           <li><a href="#"><span class="fa fa-android"></span> $19</a></li>      
+             </ul>                                               
+             </li>                                           
+           <li><a href="#"><span class="fa fa-blog"></span>Blog</a></li>
+          <li><a href="#"><span class="fa fa-home"></span>Contact Us</a></li><br><br>
+        </ul>
+      </div>
+     <center>
+    <img src="tm8.jpg" width="200" height="300">
+   <center><h1>Jamstow Talvon</h1></center><br>
+ </center> &nbsp<center><p>A Founder/CEO topnotch stock advisor/ broker,<br><br>well known in wall street journal.</p></center>
+  <br><br>
+   <div class="stocks">
+    <h2>Guaranteed Fangs Stocks</h2><br>
+     <p>these are mouth-watering Stocks ,<strong>you won't regret you did !</strong></p>
+      <h2>Allow me to say this</h3>
+      <p>Back then when fortunes/wealthy stocks were run,<br><br> by the likes of oil or financial firms,<br><br>  now ain't the same again, the technology firms are.....<br><br> <strong>can i  say running the sh"" !!</strong> pardon me, taking over,<br><br>
+   	    the world is digitalized so to say. </p> <br><br>
+         </div>
+          <div class="stocks6">
+           <form>
+           	<label for="name">Name</label>
+	           <input type="text" id="name" name="name">
+	          <label for="phone">Phone Number</label>
+	         <input type="tel" id="phone" name="phone">
+         <label for="email">Email Id</label>
+	     <input type="text" id="email" name="email">
+      <label for="street">street</label>
+	  <input type="text" id="street" name="street">
+	 <label for="street">street #</label>
+	<input type="number" pattern="[0-9]*s" id="streetnumber" name="streetnumber">
+ <button type="submit" value="order">Order</button>
+</form>
+</div>
+ <body>
+  <fieldset>
+   <center>Our Team</center>
+    <div class="gallery">
+     <a href="images/tm5.jpg"><img src="tm5.jpg" width="100" ></a>&nbsp               
+      <a href="images/tm1.jpg"><img src="tm1.jpg" width="100" height="150"></a>&nbsp
+       <a href="images/tm7.jpg"><img src="tm7.jpg" width="100"></a>&nbsp
+        <a href="images/tm3.jpg"><img src="tm3.jpg" width="100"></a><br>&nbsp
+         <a href="images/tm4.jpg"><img src="tm4.jpg" width="100"></a>&nbsp
+          <a href="images/tm6.jpg"><img src="tm6.jpg" width="100" height="150"></a>&nbsp
+           <a href="images/tm9.jpg"><img src="tm9.jpg" width="100"></a>&nbsp
+            <a href="images/tm2.jpg"><img src="tm2.jpg" width="100" height="150"></a>&nbsp
+             </div>
+              </fieldset><br><br>
+              <div class="pagination">
+             <a href="#">&laquo;</a>
+            <a href="#">1</a>
+           <a href="#">2</a>
+          <a href="#">3</a>
+         <a href="#">4</a>
+        <a href="#">5</a>
+       <a href="#">6</a>
+      <a href="#">&raquo;</a>
+              
+   
+     
+
+
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+                                                       <br>
+
+ 
+         
+        <div class="stocks3">
+      &nbsp <li>Contact Us</li>        
+    &nbsp<li>Privacy Policy</li>     
+   &nbsp <li>Disclaimer</li>        
+  <form class="subscribe">
+ <center>Subscribe to our newsletter</center><br>
+<center><input type="email" placeholder="Your email" size="20px">
+<button>subscribe</button>
+ </center><br><br>
+  </form>
+   <center>
+     link us via:
+      <i class="fa fa-facebook-square" style="font-size: 48px; color: white; background-color: steelblue;" ></i>&nbsp&nbsp
+	     <i class="fa fa-twitter" style="font-size: 48px; background-color:white; color:steelblue;"></i>&nbsp&nbsp
+	      <i class="fa fa-youtube" style="font-size: 48px;  background-color: red; color: white;"></i>&nbsp&nbsp
+         <i class="fa fa-snapchat" style="font-size: 48px; background-color: yellow; color: white;  "></i>&nbsp&nbsp
+          <i class="fa fa-instagram" style="font-size: 48px; background-color: purple; color: white;"></i>&nbsp&nbsp
+           <i class="fa fa-linkedin" style="font-size: 48px; background-color: steelblue; color: white;"></i>
+            &nbsp&nbsp
+         </center>
+       </div>
+     </div>
+      <br>
+    <br>
+  </body>
+</html>
+                                          

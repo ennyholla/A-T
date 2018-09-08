@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(illust.jpeg);
+	background-size: cover;	
+}
+#form_before_lounch{
+	width: 100px;
+	height: 35px;
+	background: #333;
+}
+

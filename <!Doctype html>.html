@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Vertical menu </title>
+		<link rel="stylesheet" href="font-awesome.css">
+	
+	<style>
+	     body{
+	     	padding: 0px;
+	     	margin: 0px;
+	     }
+
+	     .menu ul{
+	     	list-style: none; 
+	     	margin: 0;
+	     }
+
+	     .menu ul li{
+	     	padding: 15px;
+	     	position: relative;
+	     	width: 200px;
+	     	background-color: #34495e;
+	     	border-top: 1px solid #bdc3c7;
+	     }
+
+	     .menu ul ul{
+	     	transition: all 0.3s;
+	     	opacity: 0px;
+	     	position: absolute;
+	     	visibility: hidden;
+	     	left: 80%;
+	     	top: -2%;
+	     }
+
+	     .menu ul li:hover > ul{
+	     	opacity: 1;
+	     	visibility: visible;
+	     }
+
+	     .menu ul li a{
+	     	color: #fff;
+	     	text-decoration: none;
+	     }
+
+  </style>
+</head>
+<body>
+		<div class="menu">
+			<ul>
+				<li><a href=""><span class="fa fa-home"></span>Home</a></li>
+				<li><a href="#">Users</a>
+			<ul>
+                <li><a href="#">Add</a></li>
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Delete</a></li>
+            </ul>
+				</li>
+				<li><a href="#">Web Design</a></li>
+				<li><a href="#">Database</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+
+	</nav>
+</body>
+</html>

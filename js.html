@@ -1,0 +1,91 @@
+`<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Edit Remove HTML Table Row</title>
+	<mata charset="windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<style>
+	    .container{overflow: hidden}
+	    .tab{float:left;}
+	    .tab-2{margin-left: 50px;}
+	    .tab-2 input{display:block; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="tab tab-1">
+			<table id="table" border="1">
+				<tr>
+				  <th>First Name</th>
+				  <th>Last Name</th>
+				  <th>Age</th>
+				</tr>
+				<tr>
+					<td>A1</td>
+					<td>B1</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>A3</td>
+					<td>B3</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>B2</td>
+					<td>20</td>
+				</tr>
+          </table>
+      </div>
+          <div class="tab tab-2">
+          	First Name:<input type="text" name="fname" id="fname">
+          	Last  Name:<input type="text" name="lname" id="lname">
+          	Age:<input type="text" name="age" id="age">
+
+          	<button onclick="addHtmlTableRow();">Add</button>
+          	<button onclick="editHtmlTableRow();">Edit</button>
+          	<button onclick="removeHtmlTableRow()">Remove</button>
+		</div>
+		<script>
+
+			// add Row
+			function addHtmlTableRow
+			{
+                // get the table by id
+                //create a new row cells
+                //get value from input text
+                //set the values into row cell's
+				var table = document.getElementById("table"),
+				newRow = table.insertROW(table.length),
+                cell1 = newRow.insertcell(0),
+                cell2 = newRow.insertcell(2),
+                cell3 = newRow.insertcell(3),
+                fname = document.getElementById("fname").value,
+                lname = document.getElementById("lname").value,
+                age = document.getElementById("age").value;
+
+                cell1 = innerHTML = fname;
+                cell1 = innerHTML = lname;
+                cell1 = innerHTML = age;
+			}
+			//display selected row data into input text
+			function selectedRowToInput()
+			{
+				var rIndex,table = document.getElementById("table");
+				for (var i = 1 ; i = < table.rows.length; i i++)
+				{
+					table.rows[i] = onclick = function()
+					{
+                       //get the selected row index
+                       rIndex = this.rowIndex;
+                       console.log(rIndex);
+
+					};
+				}
+			}
+			selectedRowToInput();
+		</script>
+
+	
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Navbar dropdown</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     body{
+        	background: url('team.jpg');
+        	margin: 0;
+
+
+     }
+
+     .navbar{
+        	width:100%;
+     	    background: #6699cc;
+     	    box-shadow: 0 2px 5px 0 rgba (0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+     }
+
+     ul{
+        	text-align: left;
+        	display:inline;
+         	margin: 0;
+        	padding: 0;
+     	    list-style: none;
+     }
+
+     ul li{
+        	font: bold 12px/18px sans-serif;
+        	display: inline-block;
+         	position: relative;
+     	    padding: 25px 20px;
+     	    background:#6699ccc;
+     }
+
+     ul li a{
+        	text-decoration: none;
+        	padding: 25px 20px;
+        	color: red;
+     	    font-size: 15px;
+     }
+
+     ul li:hover{
+        	background:#4dd0e1;
+        	color: white;
+     }
+
+     ul li ul{
+        	padding: 0;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 250px;
+          display: none;
+          visibility: hidden;
+          box-shadow: 0 2px 5px 0 rgba (0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+
+      ul li ul li{
+          background: #00acc1;
+          display: block;
+      }
+
+      ul li:hover ul{
+          display: block;
+          opacity: .5;
+          visibility: visible;
+     }
+
+     ul ul ul li{
+        	display: none;
+     }
+
+     ul ul li:hover li{
+        	display: block;
+     }
+
+        ul ul ul{
+        	left: 100%;
+        	top: 0px;
+    }
+
+
+        span{
+          margin: 10px;
+
+   }
+
+
+</style>	
+</head>
+    <div class="navbar">
+    <ul>
+           <li><a href="#"><span class="fa fa-home"></span>Home</a></li>
+           <li><a href="#">about</a></li>
+           <li><a href="#">services&nbsp&#8681</a>
+    <ul>
+           <li><a href="#">web design</a></li>
+           <li><a href="#">web hosting</a></li>
+           <li><a href="#">web development</a></li>
+           <li><a href="#">graphic design&#8680</a>
+	  </ul>
+		   <li><a href="#">photoshop</a></li>
+           <li><a href="#">pagemaker</a></li>
+            <li><a href="#">adobe indesign</a></li>
+           <li><a href="#">illustrator</a>
+     </ul>
+
+     </li>
+     </ul>
+
+     </li>
+          <li><a href="#">blog</a></li>
+           <li><a href="#"><span class="fa fa-home"></span>contact</a></li>
+	   </ul>
+        
+   
+   </div>
+<body>
+</body>
+</html>
